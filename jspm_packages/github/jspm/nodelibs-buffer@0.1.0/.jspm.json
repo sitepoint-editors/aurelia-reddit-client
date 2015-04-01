@@ -1,0 +1,7 @@
+{
+  "registry": "npm",
+  "format": "cjs",
+  "dependencies": {
+    "buffer": "buffer@^3.0.1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "registry": "npm",
+  "format": "cjs",
+  "dependencies": {
+    "util": "util@^0.10.3"
+  }
+}
