@@ -25,6 +25,7 @@ System.register(["aurelia-http-client"], function (_export) {
           loadPosts: {
             value: function loadPosts() {
               var _this = this;
+
               // Aurelia's http client provides us with a jsonp method for
               // getting around CORS issues. The second param is the callback
               // name which reddit requires to be "jsonp"
@@ -36,7 +37,9 @@ System.register(["aurelia-http-client"], function (_export) {
             }
           },
           activate: {
+
             // This is called once when the route activates
+
             value: function activate() {
               return this.loadPosts();
             }
@@ -44,6 +47,7 @@ System.register(["aurelia-http-client"], function (_export) {
         }, {
           inject: {
             // Dependency inject the HttpClient
+
             value: function inject() {
               return [HttpClient];
             }
@@ -55,3 +59,4 @@ System.register(["aurelia-http-client"], function (_export) {
     }
   };
 });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZ1bm55LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7TUFBUSxVQUFVLGlDQUVILEtBQUs7Ozs7QUFGWixnQkFBVSxzQkFBVixVQUFVOzs7Ozs7Ozs7QUFFSCxXQUFLO0FBSUwsaUJBSkEsS0FBSyxDQUlKLElBQUksRUFBQztnQ0FKTixLQUFLOztBQUtkLGNBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDO0FBQ2pCLGNBQUksQ0FBQyxLQUFLLEdBQUcsRUFBRSxDQUFDO0FBQ2hCLGNBQUksQ0FBQyxhQUFhLEdBQUcsZ0NBQWdDLENBQUM7U0FDdkQ7O3FCQVJVLEtBQUs7QUFVaEIsbUJBQVM7bUJBQUEscUJBQUU7Ozs7Ozs7QUFLVCxxQkFBTyxJQUFJLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsYUFBYSxFQUFFLE9BQU8sQ0FBQyxDQUFDLElBQUksQ0FBQyxVQUFBLENBQUMsRUFBSTs7QUFFNUQsc0JBQUssS0FBSyxHQUFHLENBQUMsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQztlQUN2QyxDQUFDLENBQUM7YUFDSjs7QUFHRCxrQkFBUTs7OzttQkFBQSxvQkFBRTtBQUNSLHFCQUFPLElBQUksQ0FBQyxTQUFTLEVBQUUsQ0FBQzthQUN6Qjs7O0FBdEJNLGdCQUFNOzs7bUJBQUEsa0JBQUc7QUFBRSxxQkFBTyxDQUFDLFVBQVUsQ0FBQyxDQUFDO2FBQUU7Ozs7ZUFGN0IsS0FBSyIsImZpbGUiOiJmdW5ueS5qcyIsInNvdXJjZVJvb3QiOiIvc3JjLyJ9

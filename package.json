@@ -54,10 +54,6 @@
       "aurelia-router": "github:aurelia/router@^0.6.0",
       "bootstrap": "github:twbs/bootstrap@^3.3.1",
       "font-awesome": "npm:font-awesome@^4.3.0"
-    },
-    "devDependencies": {
-      "traceur": "github:jmcriffey/bower-traceur@0.0.87",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87"
     }
   }
 }

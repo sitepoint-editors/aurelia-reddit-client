@@ -1,0 +1,8 @@
+<template>
+  <button click.delegate="toggleGif()">Toggle Gif</button> <br />
+  <img src.bind="data.thumbnail == undefined ? '' : data.thumbnail" />
+  <a href="http://reddit.com${data.permalink}">
+    ${data.title}
+  </a> <br />
+  <iframe style="border: none;" show.bind="gifActive" src.bind="gifSrc"></iframe>
+</template>

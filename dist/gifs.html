@@ -1,10 +1,8 @@
 <template>
+  <require from="./reddit-gif"></require>
   <ul class="list-group">
     <li class="list-group-item" repeat.for="p of posts">
-      <img src.bind="p.data.thumbnail" />
-      <a href="http://reddit.com${p.data.permalink}">
-        ${p.data.title}
-      </a>
+      <reddit-gif data.bind="p.data"></reddit-gif>
     </li>
   </ul>
 </template>

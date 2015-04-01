@@ -3,7 +3,7 @@ System.config({
     "*": "dist/*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js",
-    "aurelia-skeleton-navigation/*": "dist/*.js"
+    "aurelia-skeleton-navigation/*": "lib/*.js"
   }
 });
 
@@ -118,8 +118,10 @@ System.config({
     },
     "github:jspm/nodelibs-http@1.7.0": {
       "Base64": "npm:Base64@0.2.1",
+      "events": "github:jspm/nodelibs-events@0.1.0",
       "inherits": "npm:inherits@2.0.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "github:jspm/nodelibs-https@0.1.0": {
@@ -157,7 +159,6 @@ System.config({
     },
     "npm:amdefine@0.1.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.1",
-      "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
