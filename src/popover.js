@@ -31,15 +31,14 @@ export class Popover {
 
   // gets fired when the provided value changes, although not needed in this example since the json from reddit is static
   textChanged(newValue){
-    console.log(newValue);
-    $(this.element).data('popover').options.title = newValue;
+    $(this.element).data('bs.popover').options.title = newValue;
   }
 
   contentChanged(newValue){
-    $(this.element).data('popover').options.content = newValue;
+    $(this.element).data('bs.popover').options.content = newValue;
   }
 
   placementChanged(newValue){
-    $(this.element).data('popover').options.placement = newValue;
+    $(this.element).data('bs.popover').options.placement = newValue;
   }
 }
