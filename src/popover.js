@@ -2,7 +2,7 @@ import {Behavior} from 'aurelia-framework';
 import $ from 'bootstrap';
 import bootstrap from 'bootstrap';
 
-// Export the tooltip as an ES6 class
+// Export the popover as an ES6 class
 export class Popover {
   // declare metadata so that Aurelia understand what kind of object this is
   static metadata(){

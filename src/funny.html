@@ -2,7 +2,7 @@
   <require from="./popover"></require>
   <ul class="list-group">
     <li class="list-group-item" repeat.for="p of posts">
-      <img src.bind="p.data.thumbnail" popover="placement: 'right'; title.bind: p.data.link_flair_text; content.bind: p.data.title" />
+      <img src.bind="p.data.thumbnail" popover="placement: 'right'; title.bind: p.data.url; content.bind: p.data.title" />
       <a href="http://reddit.com${p.data.permalink}">
         ${p.data.title}
       </a>
