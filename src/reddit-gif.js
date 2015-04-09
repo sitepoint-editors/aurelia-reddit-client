@@ -1,12 +1,8 @@
-import {Behavior} from 'aurelia-framework';
+import {customElement, bindable} from 'aurelia-framework';
 
+@customElement('reddit-gif')
+@bindable('data')
 export class RedditGif {
-
-  static metadata(){
-    return Behavior
-      .customElement('reddit-gif')
-      .withProperty('data');
-  }
 
   constructor() {
     this.gifActive = false;

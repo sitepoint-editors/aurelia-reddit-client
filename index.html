@@ -1,12 +1,19 @@
 <!doctype html>
   <html>
     <head>
-      <link rel="stylesheet" type="text/css" href="jspm_packages/github/twbs/bootstrap@3.3.2/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="jspm_packages/github/twbs/bootstrap@3.3.4/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="styles/styles.css">
     </head>
     <body aurelia-app>
       <script src="jspm_packages/system.js"></script>
       <script src="config.js"></script>
+      <script>
+        System.config({
+          "paths": {
+            "*": "dist/*.js"
+          }
+        });
+      </script>
       <script>
         System.import('aurelia-bootstrapper');
       </script>
